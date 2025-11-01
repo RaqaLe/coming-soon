@@ -1,0 +1,41 @@
+* { margin:0; padding:0; }
+
+html {
+	width:100vw; 
+	height:100vh; 
+} /* just to be sure these are full screen*/
+
+body { 
+	width:100vw; 
+	height:100vh;     
+	font-family: Arial, sans-serif;
+	color: white;
+	display: relative;
+	justify-content: center;
+	align-items: center;
+	background-color:black;
+}
+canvas { 
+   overflow: hidden;
+   width:100vw;
+   height:100vh;
+   z-index: 2;
+   /*
+   background-image: url('cool_bg_landscape.png');
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   */
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5); /* Optional overlay */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
